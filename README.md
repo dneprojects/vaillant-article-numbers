@@ -52,7 +52,11 @@ Thirty seconds, no Git needed; we add the row.
 [`article-numbers.csv`](article-numbers.csv).
 
 Where to find the article number: it is printed on the nameplate and on the
-invoice. Over the bus it is **characters 7–16** of the `b509 24/25/26/27` serial
+invoice. The full serial is also shown in the Vaillant app (myVAILLANT /
+sensoApp), and the article number is **characters 7–16** of it — but the app does
+**not** show the exact model designation (type and power class), so the nameplate
+or invoice stays the authoritative source for the model name. Over the bus the
+article number is likewise **characters 7–16** of the `b509 24/25/26/27` serial
 (layout: `21` + year + week + **10-char article number** + factory mark + counter
 + `N` + check digit; a 6-digit article number is `<`-padded to ten).
 
