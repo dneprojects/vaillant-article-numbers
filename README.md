@@ -64,8 +64,7 @@ them.
 ## License & provenance
 
 The entries are plain facts — an article number next to the model on a
-nameplate — contributed by owners from their own hardware. They are **not**
-derived from any GPL-licensed definition source (ebusd, ebus-typespec, …).
+nameplate — contributed by owners from their own hardware.
 
 Everything here is released under **[CC0 1.0](LICENSE)** (public domain), so the
 map can be embedded freely in any project, including Apache-2.0 licensed ones.
