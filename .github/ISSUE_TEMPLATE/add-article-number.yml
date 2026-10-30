@@ -1,0 +1,40 @@
+name: Add an article number
+description: Contribute a Vaillant article number → model mapping
+title: "[article] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for contributing! Please share only the **article number**, not your
+        full serial — the serial contains a per-unit counter that identifies your
+        device. The article number is the same for every unit of the same model.
+  - type: input
+    id: article_number
+    attributes:
+      label: Article number (Sachnummer)
+      description: The 10-digit number — from the nameplate/invoice, or characters 7–16 of the eBUS serial.
+      placeholder: "0010021122"
+    validations:
+      required: true
+  - type: input
+    id: model
+    attributes:
+      label: Model (as printed on the nameplate / invoice)
+      placeholder: "aroTHERM plus VWL 125/6 A S2"
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source
+      description: Where you read it — e.g. nameplate, invoice, manual.
+      placeholder: "invoice"
+    validations:
+      required: false
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes (optional)
+      description: Anything useful — scan ident / HW version, bus address, etc. Please do NOT paste your full serial number.
+    validations:
+      required: false

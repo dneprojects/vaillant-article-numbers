@@ -1,0 +1,10 @@
+article_number,model,source,notes
+0010021122,aroTHERM plus VWL 125/6 A S2,installation A,both heat pumps in the cascade share this (0x08 + 0x18)
+0010021118,aroTHERM plus VWL 75/6 A S2,john30/ebusd#1765,
+0010023696,eloBLOCK VE 24,installation A,scans as V32 hw9802
+8000015501,VR 940f (internet gateway),installation A,
+0010045478,sensoCOMFORT VRC 720/2,printed manual,
+0010014313,aguaFLOW exclusive VPM 40/45/2 W,installation A,scans as PMW01
+0020184846,VR 71 (mixer & solar module),installation A,
+0020235465,VR 32/B (bus coupler),installation A,
+0010031643,VWZ AI (control / interface module),installation A,both VWZ units share this (0x76 + behind coupler)

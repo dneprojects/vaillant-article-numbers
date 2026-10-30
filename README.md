@@ -24,17 +24,9 @@ number, not the serial.
 
 ## Map
 
-| Article number | Model (nameplate) | Source |
-|---|---|---|
-| `0010021122` | aroTHERM plus VWL 125/6 A S2 | installation A |
-| `0010021118` | aroTHERM plus VWL 75/6 A S2 | [john30/ebusd#1765](https://github.com/john30/ebusd/issues/1765) |
-| `0010023696` | eloBLOCK VE 24 | installation A |
-| `8000015501` | VR 940f (internet gateway) | installation A |
-| `0010045478` | sensoCOMFORT VRC 720/2 | printed manual |
-| `0010014313` | aguaFLOW exclusive VPM 40/45/2 W | installation A |
-| `0020184846` | VR 71 (mixer & solar module) | installation A |
-| `0020235465` | VR 32/B (bus coupler) | installation A |
-| `0010031643` | VWZ AI (control / interface module) | installation A |
+The map lives in **[`article-numbers.csv`](article-numbers.csv)** — one row per
+entry (`article_number,model,source,notes`). GitHub renders it as a sortable
+table when you open it, and the plain CSV drops straight into any tool.
 
 ## Observed structure
 
@@ -52,14 +44,19 @@ them.
 
 ## How to contribute
 
-1. Read `b509 24`, `25`, `26` and `27` from your device and concatenate the ASCII
-   payload to the 28-character serial. Its layout is
-   `21` + year + week + **10-char article number** + factory mark + counter + `N`
-   + check digit. A 6-digit article number is `<`-padded to ten.
-2. The article number is **characters 7–16** of the serial.
-3. Open an issue (or a pull request editing the table above) with the **article
-   number** and the **model printed on your nameplate / invoice**. The serial is
-   not needed — please leave it out.
+**Easiest — open an issue:** use the *"Add an article number"* issue form and fill
+in the **article number** and the **model printed on your nameplate / invoice**.
+Thirty seconds, no Git needed; we add the row.
+
+**Or send a pull request** adding a line to
+[`article-numbers.csv`](article-numbers.csv).
+
+Where to find the article number: it is printed on the nameplate and on the
+invoice. Over the bus it is **characters 7–16** of the `b509 24/25/26/27` serial
+(layout: `21` + year + week + **10-char article number** + factory mark + counter
++ `N` + check digit; a 6-digit article number is `<`-padded to ten).
+
+Please share only the article number — **leave out your full serial.**
 
 ## License & provenance
 
